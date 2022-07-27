@@ -13,11 +13,10 @@ for i in range(m) :
         if int(id[0]) <= greaterId :
             greaterId = int(id[0])
             max = count
-            print('----------------')
-            print(greaterId, max)
-            print('----------------')
-        else : continue
-
+        else : 
+            greaterId = int(id[0])
+            max = count
+            
 print(greaterId, max)
             
     
