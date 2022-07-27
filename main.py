@@ -9,15 +9,14 @@ for i in range(m) :
     for k in range(1, 5) :
         if id[k] == 'O' :
             count += score[k-1]
-        if count >= max :
-            if int(id[0]) >= greaterId :
-                greaterId = int(id[0])
-                max = count
-                print('----------------')
-                print(max)
-                print(greaterId)
-                print('----------------')
-            else : continue
+    if count >= max :
+        if int(id[0]) <= greaterId :
+            greaterId = int(id[0])
+            max = count
+            print('----------------')
+            print(greaterId, max)
+            print('----------------')
+        else : continue
 
 print(greaterId, max)
             
